@@ -20,6 +20,7 @@ namespace Web.Controllers
 
         public AccountController()
         {
+            string test = "test";
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
