@@ -5,8 +5,8 @@
 <fieldset>
     <legend>User DashBoard</legend>
 
-    @if (Session["UserName"] != null)
+    @if (Session["FirstName"] != null)
     {
-        <text>Welcome @Session["UserName"].ToString()</text>
+        <text>Welcome @Session["FirstName"].ToString()</text>
     }
 </fieldset> 

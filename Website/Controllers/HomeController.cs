@@ -24,8 +24,7 @@ namespace Website.Controllers
 
                     if (obj != null)
                     {
-                        Session["MemberID"] = obj.MemberId.ToString();
-                        Session["Email"] = obj.Email.ToString();
+                        Session["FirstName"] = obj.FirstName.ToString();
                         return RedirectToAction("UserDashboard");
                     }
                 }
@@ -36,7 +35,7 @@ namespace Website.Controllers
 
         public ActionResult UserDashBoard()
         {
-            if (Session["MemberID"] != null)
+            if (Session["FirstName"] != null)
             {
                 return View();
             }
